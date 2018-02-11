@@ -1,0 +1,37 @@
+
+$border-home-link: 2px solid rgba(108, 92, 231,1.0);
+$cyan: rgba(178, 190, 195,1.0);
+$light-blue: rgba(9, 132, 227, 0.5);
+
+.home-option{
+	border-right: $border-home-link;
+}
+.navbar{
+	background-color: rgba(9, 132, 227,1.0);
+	color: white;
+}
+
+.home{
+	background: url('../img/bg-desktop.jpg');
+	background-size: cover;
+	min-height: 550px;
+}
+.form-overlay{
+	background-color: rgba(9, 132, 227, 0.5)
+}
+.form-control, .form-control:active, .form-control:focus{
+	color: white;
+	background-color: $light-blue ;
+}
+.tres-passos{
+	background-color: $cyan;
+}
+.row-item-busca{
+	border-bottom: 2px dotted $light-blue;
+}
+@media screen and (max-width: 700px) {
+	.home-option{
+		border-right: none;
+		border-bottom: $border-home-link;
+	}	
+}
